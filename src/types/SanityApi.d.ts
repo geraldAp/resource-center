@@ -1,6 +1,8 @@
+
+import { PortableTextBlock } from "sanity";
 // resourceContent Types
 
-interface PopularBook {
+export interface PopularBook {
     book_title: string;
     book_author: string;
     book_image: any
@@ -13,13 +15,13 @@ interface Resources {
     popular_books: PopularBook[];
 }
 
-interface Course {
+export interface Course {
     course_title: string;
     introduction: string;
     resources: Resources[];
 }
 //   what is being used 
-interface Resource {
+export interface Resource {
     _id: string;
     name: string;
     slug: string
@@ -31,10 +33,14 @@ interface Resource {
 }
 
 // Blogs
-interface Post {
+export interface Post {
     _id: string;
     title: string;
-    mainImage: any;
-    slug: string;
+    publishedAt: string;
+    body: PortableTextBlock[];
     author: string;
+    slug: string;
+    description: string;
+    mainImage: any;
+    categories: [{title: string}];
   }

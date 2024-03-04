@@ -164,10 +164,10 @@ const Home = () => {
             <div className="w-full flex justify-center ">
               <div className="flex gap-5 ">
                 <button className="bg-customGreen rounded-[26px]  border-2 ease-in duration-500 hover:scale-110 border-customGreen hover:bg-transparent px-12 py-2">
-                  Get Started
+                 Tech Resources
                 </button>
                 <button className="bg-customGray rounded-[26px]  border-2 ease-in duration-500 hover:scale-110 border-customGray hover:bg-transparent px-12 py-2">
-                  Learn a Skill
+                Physics Resources
                 </button>
               </div>
             </div>
